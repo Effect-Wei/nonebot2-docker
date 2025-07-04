@@ -33,4 +33,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: effectwei/nonebot2:${{ env.TAG_DATE }}
+          tags: effectwei/nonebot2:latest,effectwei/nonebot2:${{ env.TAG_DATE }}
