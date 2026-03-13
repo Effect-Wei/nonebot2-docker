@@ -31,5 +31,7 @@ else
   echo "There is no script $PRE_START_PATH"
 fi
 
+nb generate
+
 # Start Gunicorn
 exec gunicorn -k "$WORKER_CLASS" -c "$GUNICORN_CONF" "$APP_MODULE"
